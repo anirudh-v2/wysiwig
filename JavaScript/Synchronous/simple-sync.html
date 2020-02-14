@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple synchronous JavaScript example</title>
+  </head>
+  <body>
+    <button onclick="simpleSync()">Click me</button>
+
+    <script>
+      function simpleSync() {
+        let myDate;
+        
+        for (let i = 0; i < 10000000; i++) {
+          let date = new Date();
+          myDate = date;
+        }
+        console.log(myDate);
+        console.log("button is clicked");
+      }
+    </script>
+  </body>
+</html>
